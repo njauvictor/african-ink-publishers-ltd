@@ -1,0 +1,99 @@
+.banner-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 560px;
+  color: #e55500;
+}
+
+.card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  transition: background 0.3s ease-in-out;
+}
+
+.card-content:hover .overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.category {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #ccc;
+}
+
+.icons {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.read-more {
+  background: #e07a00;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.read-more:hover {
+  background: #e55500;
+}
+
+@media (max-width: 768px) {
+  .mySwiper {
+    height: 600px; /* Adjusted for mobile screens */
+    color: #e55500;
+  }
+
+  .book-title {
+    font-size: 16px;
+  }
+
+  .icons {
+    font-size: 16px;
+    color: #e55500;
+  }
+}
+
+
