@@ -85,7 +85,7 @@ export default function Cart() {
     const interval = setInterval(async () => {
       try {
         const res = await axios.get(
-          `https://mpesa-africanink-ltd-server.vercel.app//callback?CheckoutRequestID=${checkoutRequestId}`
+          `https://mpesa-africanink-ltd-server.vercel.app/callback?CheckoutRequestID=${checkoutRequestId}`
         );
         console.log("Polling response:", res);
 
